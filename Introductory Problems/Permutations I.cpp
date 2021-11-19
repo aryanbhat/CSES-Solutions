@@ -9,9 +9,9 @@ int main(){
     if(N == 1)      printf("1 ");
     else if(N <= 3) printf("NO SOLUTION\n");
     else {
-        for(int i = 2; i <= N; i += 2)
+        for(int i = N; i >= 1; i -= 2)
             printf("%d ", i);
-        for(int i = 1; i <= N; i += 2)
+        for(int i = N; i >= 1; i -= 2)
             printf("%d ", i);
     }
 }
